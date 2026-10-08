@@ -1,0 +1,1 @@
+var EAELImageMaskingConfig={"svg_dir_url":"../../../../wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/img/image-masking/svg-shapes/"}

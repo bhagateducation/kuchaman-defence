@@ -1,0 +1,1 @@
+window._googlesitekit=window._googlesitekit||{};window._googlesitekit.contentEvents={"postID":2523,"isReadableSinglePost":!1,"hasVimeoEmbed":!1,"wordCount":0,"estimatedReadTimeSeconds":0,"isLastPageOfMultiPagePost":!1,"readTimeThresholdPercent":85,"minimumReadTimeSeconds":5}

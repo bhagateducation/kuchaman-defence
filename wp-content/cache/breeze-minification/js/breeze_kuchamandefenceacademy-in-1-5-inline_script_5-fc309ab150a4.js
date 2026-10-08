@@ -1,0 +1,1 @@
+(function(p){if(!p)return;let w=p.offsetWidth,m=function(a,b){return Math.min(a,b)===a};p.querySelector('.grw-row').classList.replace('grw-row-m','grw-row-'+(m(w,510)?'xs':m(w,750)?'x':m(w,1100)?'s':m(w,1450)?'m':m(w,1800)?'l':'xl'))})(document.currentScript?.closest('.wp-gr'))

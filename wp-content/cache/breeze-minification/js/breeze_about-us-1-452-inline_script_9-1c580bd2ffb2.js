@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",function(){if("function"!==typeof window.LazyLoad&&"function"!==typeof LazyLoad){return}
+var breezeLazyLoad=window.LazyLoad||LazyLoad;window.lazyLoadInstance=new breezeLazyLoad({elements_selector:".br-lazy",data_src:"breeze",data_srcset:"brsrcset",data_sizes:"brsizes",class_loaded:"br-loaded",threshold:300,})})

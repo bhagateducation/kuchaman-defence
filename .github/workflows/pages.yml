@@ -20,12 +20,13 @@ jobs:
     steps:
       - name: Check public source preview
         run: |
+          preview_base="https://raw.githack.com/${GITHUB_REPOSITORY}/${GITHUB_SHA}"
           curl --fail --location --silent --show-error --retry 5 --retry-delay 5 \
-            https://raw.githack.com/bhagateducation/kuchaman-defence/main/index.html \
+            "$preview_base/index.html" \
             -o /tmp/kuchaman-preview.html
-          grep -q 'Kuchaman Defence Academy' /tmp/kuchaman-preview.html
+          grep -q 'Defence Dreams Begin Here' /tmp/kuchaman-preview.html
           curl --fail --location --silent --show-error --retry 5 --retry-delay 5 \
-            https://raw.githack.com/bhagateducation/kuchaman-defence/main/styles.css \
+            "$preview_base/about-us/index.html" \
             -o /dev/null
 
   deploy:
@@ -57,8 +58,8 @@ jobs:
         if: steps.pages-status.outputs.enabled == 'true'
         run: |
           mkdir -p _site
-          cp index.html styles.css script.js hero-training.png _site/
-          cp -R fonts _site/
+          cp index.html clone.js _site/
+          cp -R about-us program admission contact-us blog privacy-policy wp-content wp-includes _site/
       - uses: actions/upload-pages-artifact@v3
         if: steps.pages-status.outputs.enabled == 'true'
         with:

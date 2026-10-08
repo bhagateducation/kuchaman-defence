@@ -1,0 +1,1 @@
+var fluentformElementor={"adminUrl":"../../../../wp-admin/admin.php"}

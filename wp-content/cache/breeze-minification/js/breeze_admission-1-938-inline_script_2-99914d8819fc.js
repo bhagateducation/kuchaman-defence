@@ -1,0 +1,1 @@
+var breeze_prefetch={"local_url":"https://kuchamandefenceacademy.in","ignore_remote_prefetch":"1","ignore_list":["wp-admin","wp-login.php"]}
