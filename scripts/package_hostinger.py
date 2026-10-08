@@ -43,6 +43,7 @@ def main() -> None:
         bad = archive.testzip()
         if bad:
             raise ValueError(f"ZIP integrity check failed at {bad}")
+    output.chmod(0o644)
     print(f"Created {output} with {len(paths)} files ({output.stat().st_size:,} bytes)")
 
 
