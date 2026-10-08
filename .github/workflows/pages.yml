@@ -28,6 +28,12 @@ jobs:
           curl --fail --location --silent --show-error --retry 5 --retry-delay 5 \
             "$preview_base/about-us/index.html" \
             -o /dev/null
+          curl --fail --location --silent --show-error --retry 5 --retry-delay 5 \
+            "$preview_base/wp-content/cache/breeze-minification/css/breeze_kuchamandefenceacademy-in-1-5-1bcc1f7da9ae.css" \
+            -o /dev/null
+          curl --fail --location --silent --show-error --retry 5 --retry-delay 5 \
+            "$preview_base/wp-content/uploads/2025/04/IMG-20250409-WA0047-e1744219165459-1024x728.jpg.webp" \
+            -o /dev/null
 
   deploy:
     environment:
